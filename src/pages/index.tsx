@@ -35,7 +35,7 @@ export default function Home() {
         title="homepage"
         description="Home page for my webpage"
         ogImage="/og-image.png"
-        url={new URL("http://localhost:3000/")}
+        url={new URL("https://denoapi.onrender.com/")}
       />
       <main>
         <Box

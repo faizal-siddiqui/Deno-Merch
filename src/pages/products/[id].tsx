@@ -23,7 +23,7 @@ const Prodcut = ({ product }: SingleProduct) => {
         title="homepage"
         description="Home page for my webpage"
         ogImage="/og-image.png"
-        url={new URL("http://localhost:3000/")}
+        url={new URL("https://denoapi.onrender.com/")}
       />
       <Box
         w="calc(11/12)%"
@@ -70,7 +70,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const response = await axios.get(
-    `http://localhost:8080/products/${context?.params?.id}`
+    `https://denoapi.onrender.com/products/${context?.params?.id}`
   );
 
   return {

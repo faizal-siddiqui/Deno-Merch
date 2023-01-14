@@ -3,7 +3,7 @@ import axios, { AxiosResponse } from "axios";
 
 export const getProductsAPI = async () => {
   let response: AxiosResponse<Product[]> = await axios.get(
-    "http://localhost:8080/products"
+    "https://denoapi.onrender.com/products"
   );
   return response.data;
 };
